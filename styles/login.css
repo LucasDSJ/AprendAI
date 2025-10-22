@@ -1,6 +1,6 @@
 form {
-    border: 1px solid greenyellow;
-    box-shadow: 0 4px 20px rgba(173, 255, 47, 0.2);
+    border: 1px solid rgba(0, 123, 255, 0.798);
+    box-shadow: 0 4px 20px rgba(0, 123, 255, 0.2);
 }
 
 /* .btn {
@@ -13,8 +13,8 @@ form {
 } */
 .btn {
     font-weight: bolder;
-    background-color: rgba(153, 205, 50, 0.798) !important; /* Cor normal */
-    border-color: rgba(153, 205, 50, 0.798) !important; /* Cor da borda */
+    background-color: rgba(0, 123, 255, 0.798) !important; /* Cor normal */
+    border-color: rgba(0, 123, 255, 0.798) !important; /* Cor da borda */
     color: #fff !important; /* Cor do texto */
     height: 3rem;
     width: 40%;

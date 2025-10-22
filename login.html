@@ -13,48 +13,52 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
     <link href="styles/login.css" rel="stylesheet">
 </head>
-<body>
-<div id="app">
+<body class="d-flex flex-column min-vh-100">
+<div id="app" class="d-flex flex-column flex-fill">
     <!-- Navbar -->
     <navbar-component></navbar-component>
 
-    <div class="main-content">
-        <div class="content">
-            
-            <div class="container pt-1">
-                <div class="container mt-5" style="margin-top: 50px;">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-5 col-sm-12">
-                            <form name="formulario" method="POST" action="banco_de_dados/login.php" class="p-4 rounded">
-                                <h2 class="text-center text-white">Login</h2>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email:</label>
-                                    <input type="email" id="email" name="email" class="form-control" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="senha" class="form-label">Senha:</label>
-                                    <input type="password" id="senha" name="senha" class="form-control" required>
-                                </div>
-                                <div class="gap-2" id="area_dos_botoes">
-                                    <button type="submit" class="btn">Login</button>
-                                    <button type="reset" class="btn">Limpar</button>
-                                </div>
-                                <div class="d-grid gap-2 col-12 mx-auto mt-2">
-                                    <button class="btn" id="botao-maior"  type="button">
-                                        <a class="link-light" href="cadastro.html" style="text-decoration: none;">Cadastrar novo usuário</a>
-                                    </button>
-                                </div>
-                            </form>
+    <main class="flex-fill">
+        <div class="main-content">
+            <div class="content">
+                
+                <div class="container pt-1">
+                    <div class="container mt-5" style="margin-top: 50px;">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-5 col-sm-12">
+                                <form name="formulario" method="POST" action="banco_de_dados/login.php" class="p-4 rounded">
+                                    <h2 class="text-center text-white">Login</h2>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input type="email" id="email" name="email" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="senha" class="form-label">Senha:</label>
+                                        <input type="password" id="senha" name="senha" class="form-control" required>
+                                    </div>
+                                    <div class="gap-2" id="area_dos_botoes">
+                                        <button type="submit" class="btn">Login</button>
+                                        <button type="reset" class="btn">Limpar</button>
+                                    </div>
+                                    <div class="d-grid gap-2 col-12 mx-auto mt-2">
+                                        <button class="btn" id="botao-maior"  type="button">
+                                            <a class="link-light" href="cadastro.html" style="text-decoration: none;">Cadastrar novo usuário</a>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </main>
         <!-- Footer -->
         <footer-component></footer-component>
-    </div>
 </div>
 
     <script src="components/navbar.js"></script>

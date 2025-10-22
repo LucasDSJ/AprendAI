@@ -13,25 +13,31 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
    
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/navbar.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+    <link href="styles/footer.css" rel="stylesheet">
+  	
 </head>
-<body>
-    <div id="app">
+<body class="d-flex flex-column min-vh-100">
+    <div id="app" class="d-flex flex-column flex-fill">
         <!-- Navbar -->
         <navbar-component></navBar-component>
         
-        <div class="main-content">
-            <div class="content">
-                <div class="container pt-3">
-                    <div class="border border-2 border greenyellow p-4" id="area_conteudo">
-                        <h1>Área de Conteúdo (Cursos)</h1>
-                        <p>Explicativo sobre o site.</p>
+        <main class="flex-fill">
+            <div class="main-content">
+                <div class="content">
+                    <div class="container pt-3">
+                        <div class="border border-2 border greenyellow p-4" id="area_conteudo">
+                            <h1>Área de Conteúdo (Cursos)</h1>
+                            <p>Explicativo sobre o site.</p>
+                        </div>
                     </div>
                 </div>
+                
             </div>
-            
-            <!-- footer -->
-            <footer-component></footer-component>
-        </div>
+        </main>
+        <!-- footer -->
+        <footer-component></footer-component>
     </div>
 
 <script src="components/navbar.js"></script>

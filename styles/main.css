@@ -1,103 +1,41 @@
-body {
-    height: 100%;
-    background-color: #111;
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-}
 html, body {
     height: 100%;
     margin: 0;
-}
-.main-content {
-    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b132b; /* Azul escuro */
+    color: #f8f9fa; /* Texto claro */
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
-}
-.content {
-flex: 1;
-}
-/* Navbar */
-.navbar {
-    border-bottom: 2px solid rgb(173, 255, 47);
-    background-color: #111;
-    padding: 20px 40px;
-    box-shadow: 0 4px 20px rgba(172, 255, 47, 0.337);
-}
-
-/* Título responsivo */
-.navbar-brand {
-    font-weight: 700;
-    color: white;
-    transition: color 0.3s ease;
-    /* Faz o texto ser responsivo */
-    font-size: clamp(1.5rem, 4vw, 3rem);
-}
-
-.navbar-brand:hover {
-    color: greenyellow;
-}
-
-/* Itens do menu */
-.nav-link {
-    color: white;
-    font-size: 1.25rem;
-    margin-left: 30px;
-    position: relative;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-    color: greenyellow;
-}
-
-/* Efeito underline animado */
-.nav-link::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: -5px;
-    background-color: greenyellow;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
-
-/* Botão hamburguer */
-.navbar-toggler {
-    border: 2px solid greenyellow;
-    border-radius: 5px;
-    padding: 5px 8px;
-    color: white;
-}
-
-.material-symbols-outlined {
-    color: white;
-    font-size: 28px;            
-    line-height: 1;
-}
-
-#area_conteudo {
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
+  /* Área de conteúdo principal (como o chat) */
+  #area_conteudo {
     margin-top: 5%;
-    border-color: greenyellow !important; 
-    box-shadow: 0 4px 20px rgba(173, 255, 47, 0.2);
-}
-
-footer {
-    background-color: rgb(133, 178, 42);
-    font: arial;
+    border-color: #0d6efd !important; /* Azul Bootstrap */
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #0d6efd; /* Azul principal */
+    font-family: Arial, sans-serif;
     font-weight: bold;
     color: #ffffff;
-}    /*position: fixed;
-    left: 0;
-    margin-top: 100%;
-    margin-bottom: 100%;
-    
-    width: 100%;
-    color: white;
     text-align: center;
     padding: 15px;
-} 
+  }
+  
+ 
