@@ -9,7 +9,7 @@ const NavbarComponent ={
           			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             			<ul class="navbar-nav p-2">
 							<li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
-							<li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+							<li class="nav-item"><a class="nav-link" href="cursos.php">Cursos</a></li>
 							<li class="nav-item"><a class="nav-link" href="chatbot.html">Chat</a></li>
 							<li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
 							<li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastrar</a></li>
@@ -31,7 +31,7 @@ const NavbarLoginComponent = {
           			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             			<ul class="navbar-nav p-2">
 							<li class="nav-item"><a class="nav-link" href="index.html">Menu</a></li>
-							<li class="nav-item"><a class="nav-link" href="cursos.html">Cursos</a></li>
+							<li class="nav-item"><a class="nav-link" href="cursos.php">Cursos</a></li>
 							<li class="nav-item"><a class="nav-link" href="chatbot.html">Chat</a></li>
             			</ul>
           			</div>
