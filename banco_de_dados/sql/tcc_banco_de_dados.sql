@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/10/2025 às 04:18
+-- Tempo de geração: 23/10/2025 às 21:19
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `tcc_banco_de_dados`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `cursos`
+--
+
+CREATE TABLE `cursos` (
+  `id_curso` int(11) NOT NULL,
+  `titulo` varchar(150) NOT NULL,
+  `descricao` text DEFAULT NULL,
+  `carga_horaria` int(11) DEFAULT NULL,
+  `imagem_capa` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `cursos`
+--
+
+INSERT INTO `cursos` (`id_curso`, `titulo`, `descricao`, `carga_horaria`, `imagem_capa`) VALUES
+(1, 'Introdução à Python', 'Aprenda os conceitos básicos da linguagem Python, incluindo variáveis, estruturas de decisão, laços de repetição, funções e manipulação de dados.', 12, 'img/python/curso_python_logo.png');
 
 -- --------------------------------------------------------
 
@@ -48,6 +69,12 @@ INSERT INTO `usuarios` (`id_usuario`, `nome`, `sobrenome`, `email`, `numero_celu
 --
 
 --
+-- Índices de tabela `cursos`
+--
+ALTER TABLE `cursos`
+  ADD PRIMARY KEY (`id_curso`);
+
+--
 -- Índices de tabela `usuarios`
 --
 ALTER TABLE `usuarios`
@@ -58,6 +85,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `cursos`
+--
+ALTER TABLE `cursos`
+  MODIFY `id_curso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
