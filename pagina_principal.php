@@ -24,10 +24,12 @@ $nome_usuario = $_SESSION['usuario_nome'];
     <!-- Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
    
-    <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
-<body>
-    <div id="app">
+<body class="d-flex flex-column min-vh-100">
+    <div id="app" class="d-flex flex-column flex-fill">
         <!-- Navbar -->
         <navbar-login-component></navbar-login-component>
         
@@ -43,9 +45,9 @@ $nome_usuario = $_SESSION['usuario_nome'];
                 </div>
             </div>
             
-            <!-- footer -->
-            <footer-component></footer-component>
         </div>
+        <!-- footer -->
+        <footer-component></footer-component>
     </div>
 
 <script src="components/navbar.js"></script>
