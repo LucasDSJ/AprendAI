@@ -1,0 +1,4 @@
+!!! IMPORTANTE !!!
+o arquivo .env precisa estar dentro da pasta backend 
+o arquivo .env precisa iniciar com OPENAI_API_KEY=
+
