@@ -2,7 +2,7 @@ const NavbarComponent ={
     template: `
         <nav class="navbar navbar-expand-lg p-2" style="padding-left: 20px; padding-right: 20px;">
         		<div class="container-fluid">
-          			<a class="navbar-brand" href="index.html">Educação para Todos</a>
+          			<a class="navbar-brand" href="index.html">AprendAI</a>
           			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" >
             			<span class="material-symbols-outlined fs-3">menu</span>
           			</button>
