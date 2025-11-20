@@ -43,12 +43,14 @@ if (!password_verify($senha, $usuario['senha'])) {
 }
 
 // Login OK → salva dados na sessão
-$_SESSION['usuario_id'] = $usuario['id_usuario'];
+$_SESSION['id_usuario'] = $usuario['id_usuario'];
 $_SESSION['usuario_nome'] = $usuario['nome'];
 $_SESSION['usuario_sobrenome'] = $usuario['sobrenome'];
 
 // Redireciona para página inicial ou dashboard
-echo "<script>alert('Login realizado com sucesso!'); window.location.href='../pagina_principal.php';</script>";
+// echo "<script>alert('Login realizado com sucesso!'); window.location.href='../backend/pagina_principal.php';</script>";
+
+header("Location: /00-PROJETOS-GITHUB/educacao_para_todos/Educacao_para_todos/backend/pagina_principal.php");
 
 // Fecha conexão
 $stmt->close();
