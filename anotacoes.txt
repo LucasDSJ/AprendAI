@@ -2,3 +2,6 @@
 o arquivo .env precisa estar dentro da pasta backend 
 o arquivo .env precisa iniciar com OPENAI_API_KEY=
 
+!! CORRIGIR ERRO 
+1. Ao tentar cadastrar um novo usuário com email e telefone já cadastrados o site redireciona para uma tela de erro.
+   Precisa ter o tratamento de erro, avisando quando o usuário escolher algum dado já cadastrado.
