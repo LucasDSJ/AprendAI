@@ -37,10 +37,30 @@ $nome_usuario = $_SESSION['usuario_nome'];
             <div class="content">
                 <div class="container pt-3">
                     <div class="border border-2 border greenyellow p-4" id="area_conteudo">
-                        <h1>Área de Conteúdo</h1>
-                        <p>Explicativo sobre o site.</p>
-                        <h1> Olá, <?php echo htmlspecialchars($nome_usuario); ?>!</h1>
-                        <a href="banco_de_dados/logout.php">Sair</a>
+                        <!-- <h1>Área de Conteúdo</h1>
+                        <p>Explicativo sobre o site.</p> -->
+                        <h1 class="text-center"> Olá, <span class="text-primary"><?php echo htmlspecialchars($nome_usuario); ?></span>!</h1>
+                        <h3 class="text-center mt-3">O que deseja fazer hoje?</h3>
+
+                        <div class="container mt-4">
+                            <div class="row text-center d-flex flex-column flex-sm-row mt-4">
+                                <a href="chatbot_logado.html" class="col-12 col-sm-6 p-0 text-decoration-none">
+                                    <div class="border border-primary p-3 h-100">
+                                        <h2 class="mt-3">Fakar com bubbles</h2>
+                                        <img src="../img/bubbles2.png" class="img-fluid">
+                                    </div>
+                                </a>
+                                <a href="cursos_logado.php" class="col-12 col-sm-6 p-0 text-decoration-none">
+                                    <div class="border border-primary p-3 h-100">
+                                        <h2 class="mt-3">Estudar</h2>
+                                        <img src="../img/cursos2.png" class="img-fluid">
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <!-- <a href="banco_de_dados/logout.php">Sair</a> -->
                     </div>
                 </div>
             </div>
