@@ -46,8 +46,8 @@ $nome_usuario = $_SESSION['usuario_nome'];
                             <div class="row text-center d-flex flex-column flex-sm-row mt-4">
                                 <a href="chatbot_logado.html" class="col-12 col-sm-6 p-0 text-decoration-none">
                                     <div class="border border-primary p-3 h-100">
-                                        <h2 class="mt-3">Fakar com bubbles</h2>
-                                        <img src="../img/bubbles2.png" class="img-fluid">
+                                        <h2 class="mt-3">Falar com bubbles</h2>
+                                        <img src="../img/bubbles_3.png" class="img-fluid">
                                     </div>
                                 </a>
                                 <a href="cursos_logado.php" class="col-12 col-sm-6 p-0 text-decoration-none">
