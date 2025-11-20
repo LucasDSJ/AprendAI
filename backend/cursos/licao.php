@@ -71,6 +71,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['concluir'])) {
     exit();
 }
 
+require_once 'Parsedown.php';
+$Parsedown = new Parsedown();
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -79,11 +82,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['concluir'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($licao['titulo']) ?></title>
 
+    <!-- GOOGLE ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Vue.js -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 
     <link href="../../styles/main.css" rel="stylesheet">
     <link href="../../styles/navbar.css" rel="stylesheet">
     <link href="../../styles/footer.css" rel="stylesheet">
+    <link href="../../styles/licoes.css" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
@@ -102,12 +114,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['concluir'])) {
 
                 <!-- Conteúdo da lição -->
                 <div class="text-white mb-4" style="white-space: pre-line;">
-                    <?= nl2br(htmlspecialchars($licao['conteudo'])) ?>
+                    <?= $Parsedown->text($licao['conteudo']); ?>
                 </div>
 
                 <!-- Botão concluir -->
                 <form method="POST">
-                    <button type="submit" name="concluir" class="btn btn-success">
+                    <button type="submit" name="concluir" class="btn btn-primary">
                         Concluir lição
                     </button>
                 </form>
