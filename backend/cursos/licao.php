@@ -81,6 +81,7 @@ $Parsedown = new Parsedown();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($licao['titulo']) ?></title>
+    <link rel="shortcut icon" type="imagex/png" href="../../img/logo_brain_primary.png">
 
     <!-- GOOGLE ICONS -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />

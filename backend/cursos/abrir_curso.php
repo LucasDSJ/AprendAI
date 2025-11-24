@@ -74,7 +74,8 @@ $porcentagem = ($total_licoes > 0) ? round(($completas / $total_licoes) * 100) :
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= htmlspecialchars($curso['titulo']) ?></title>
-
+    <link rel="shortcut icon" type="imagex/png" href="../../img/logo_brain_primary.png">
+    
     <!-- docx.js -->
     <script src="https://unpkg.com/docx@7.7.0/build/index.js"></script>
     <!-- FileSaver.js -->

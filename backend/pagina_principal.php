@@ -15,7 +15,9 @@ $nome_usuario = $_SESSION['usuario_nome'];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação para Todos</title>
+    <title>AprendAI</title>
+    <link rel="shortcut icon" type="imagex/png" href="../img/logo_brain_primary.png">
+    
     <!-- Símbolos do Google -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <!-- BOOTSTRAP -->
