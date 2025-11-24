@@ -50,7 +50,8 @@ $_SESSION['usuario_sobrenome'] = $usuario['sobrenome'];
 // Redireciona para página inicial ou dashboard
 // echo "<script>alert('Login realizado com sucesso!'); window.location.href='../backend/pagina_principal.php';</script>";
 
-header("Location: /00-PROJETOS-GITHUB/educacao_para_todos/Educacao_para_todos/backend/pagina_principal.php");
+// header("Location: /00-PROJETOS-GITHUB/educacao_para_todos/Educacao_para_todos/backend/pagina_principal.php");
+header("Location: ../backend/pagina_principal.php");
 
 // Fecha conexão
 $stmt->close();
